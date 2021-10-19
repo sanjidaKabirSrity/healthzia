@@ -22,7 +22,7 @@ const Home = () => {
                             </div>
                             <p className="text-2xl">Find a Location <span><i className="fas fa-chevron-right"></i></span></p>
                         </Link>
-                        <Link to="/doctors" className="px-8 py-5 text-white bg-primary hover:bg-primaryHov">
+                        <Link to="" className="px-8 py-5 text-white bg-primary hover:bg-primaryHov">
                             <div className="mb-3 text-5xl">
                                 <i className="fas fa-stethoscope"></i>
                             </div>

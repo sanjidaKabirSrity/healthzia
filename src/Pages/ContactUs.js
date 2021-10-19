@@ -12,15 +12,15 @@ const ContactUs = () => {
                 <h2 className="font-semibold text-4xl text-primary hover:text-secondary">CONTACT US TO GET MORE INFO</h2>
               </div>
               <div className="relative mb-4">
-                <label for="name" className="leading-7 text-primary text-sm">Name</label>
+                <label htmlFor="name" className="leading-7 text-primary text-sm">Name</label>
                 <input type="text" id="name" name="name" className="bg-white border border-primary duration-200 ease-in-out focus:border-primary focus:ring-2 focus:ring-indigo-200 leading-8 outline-none px-3 py-1 rounded text-base text-primary transition-colors w-full" />
               </div>
               <div className="relative mb-4">
-                <label for="email" className="leading-7 text-primary text-sm">Email</label>
+                <label htmlFor="email" className="leading-7 text-primary text-sm">Email</label>
                 <input type="email" id="email" name="email" className="bg-white border border-primary duration-200 ease-in-out focus:border-primary focus:ring-2 focus:ring-indigo-200 leading-8 outline-none px-3 py-1 rounded text-base text-primary transition-colors w-full" />
               </div>
               <div className="relative mb-4">
-                <label for="message" className="leading-7 text-primary text-sm">Message</label>
+                <label htmlFor="message" className="leading-7 text-primary text-sm">Message</label>
                 <textarea id="message" name="message" className="bg-white border border-primary duration-200 ease-in-out focus:border-primary focus:ring-2 focus:ring-indigo-200 leading-8 outline-none px-3 py-1 rounded text-base text-primary transition-colors w-full"></textarea>
               </div>
               <button className="bg-primary hover:bg-secondary my-5 py-3 rounded text-white">Submit</button>
