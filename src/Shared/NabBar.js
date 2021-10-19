@@ -13,8 +13,10 @@ const NabBar = () => {
         color: "#008d7f",
         borderBottom:"2px solid #008d7f"
       }
-
-    const {user , signOutForm} = useAuth();
+      const combineContext = useAuth();
+      const { firebaseContext } = combineContext;
+      const {user , signOutForm} = firebaseContext;
+    console.log(user);
     return (
         <div>
             <header className="text-gray-600 body-font">
@@ -26,12 +28,12 @@ const NabBar = () => {
                     <nav className="hidden md:block md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                     <NavLink to="/home" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>Home</NavLink>
                     <NavLink to="/aboutUs" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>About Us</NavLink>
-                    <NavLink to="/doctors" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>Doctors</NavLink>
+                    {/* <NavLink to="/doctors" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>Doctors</NavLink> */}
                     <NavLink to="/conactUs" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>Contact Us</NavLink>
                     </nav>
                     <span className="hidden md:block">
                         {user?.photoURL ? (
-                        <img className="user-img" src={user.photoURL} alt="" />
+                        <img className="h-14 rounded-full w-14 mx-4" src={user.photoURL} alt="" />
                         ) : (
                         <small>{user?.displayName}</small>
                         )}
@@ -70,9 +72,9 @@ const NabBar = () => {
                         aria-hidden="true"
                         >
                         <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M4 6h16M4 12h16M4 18h16"
                         />
                         </svg>
@@ -86,9 +88,9 @@ const NabBar = () => {
                         aria-hidden="true"
                         >
                         <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M6 18L18 6M6 6l12 12"
                         />
                         </svg>
@@ -123,9 +125,9 @@ const NabBar = () => {
                             About Us
                             </NavLink>
 
-                            <NavLink to="/doctors" className="block font-medium hover:text-secondary px-3 py-2 rounded-md text-base text-primary" >
+                            {/* <NavLink to="/doctors" className="block font-medium hover:text-secondary px-3 py-2 rounded-md text-base text-primary" >
                             Doctors
-                            </NavLink>
+                            </NavLink> */}
 
                             <NavLink to="/conactUs"
                             className="block font-medium hover:text-secondary px-3 py-2 rounded-md text-base text-primary"

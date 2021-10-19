@@ -1,0 +1,62 @@
+[
+    {
+        "id" : "data1",
+        "img":"https://i.ibb.co/rmtm2PP/tooth.png",
+        "title" : "Oral Health",
+        "subTitle" : "The majority of oral health conditions are dental caries, periodontal diseases, oral cancers, oral manifestations of HIV",
+        "description" : "Oral hygiene is the practice of keeping one's mouth clean and free of disease and other problems by regular brushing of the teeth and cleaning between the teeth. It is important that oral hygiene be carried out on a regular basis to enable prevention of dental disease and bad breath.Floss daily. Use mouthwash to remove food particles left after brushing and flossing. Eat a healthy diet and limit food with added sugars",
+        "doctorImg" : "https://i.ibb.co/BZX5f2J/lobonnya-rahman.jpg",
+        "doctorName" : "Lobonnya Rahman",
+        "doctorData" : "A periodontist is the oral health care provider who specializes in diagnosing, treating, and preventing diseases"
+    },
+    {
+        "id" : "data2",
+        "img":"https://i.ibb.co/hBtX8wV/ear.png",
+        "title" : "Otology",
+        "subTitle" : "Otology also includes surgical treatment of conductive hearing loss, such as stapedectomy surgery for otosclerosis.",
+        "description" : "Otology is a branch of medicine which studies normal and pathological anatomy and physiology of the ear  as well as their diseases, diagnosis and treatment.Otology is a branch of medicine which surgery generally refers to surgery of the middle ear Otology also includes surgical treatment of conductive hearing loss, such as stapedectomy surgery for otosclerosis.Otology is a branch of medicine which studies normal",
+        "doctorImg" : "https://i.ibb.co/xgLp2ZG/abdus-samad.jpg",
+        "doctorName" : "Abdus Samad",
+        "doctorData" : "Otology also includes surgical treatment of conductive hearing loss, such as stapedectomy surgery for otosclerosis"
+    },
+    {
+        "id" : "data3",
+        "img":"https://i.ibb.co/Z1CtDgv/liver.png",
+        "title" : "Hepatology",
+        "subTitle" : "EASL attracts the foremost hepatology experts as members and has an impressive track record in promoting research",
+        "description" : "Hepatology is a branch of medicine concerned with the study, prevention, diagnosis, and management of diseases that affect the liver, gallbladder, biliary tree, and pancreas. The term hepatology is derived from the Greek words “hepatikos” and “logia,” which mean liver and study, respectively. EASL attracts the foremost hepatology experts as members and has an impressive track record in promoting research in liver",
+        "doctorImg" : "https://i.ibb.co/QnX3px4/tanvir-ahmed.jpg",
+        "doctorName" : "Tanvir Ahmed",
+        "doctorData" : "EASL attracts the foremost hepatology experts as members and has an impressive track record in promoting research"
+    },
+    {
+        "id" : "data4",
+        "img":"https://i.ibb.co/rstXZM9/stomach.png",
+        "title" : "Gastroenterology",
+        "subTitle" : "Watch our recent workshop presented by the AGA Journals' Editors on writing and publishing in gastroenterology",
+        "description" : "Gastroenterology is the branch of medicine focused on the digestive system and its disorders. Diseases affecting the gastrointestinal tract, which include. Gastroenterology is the study of the normal function and diseases of the esophagus, stomach, small intestine, colon and rectum, pancreas, gallbladder, bile.  According to the American College of Gastroenterology, Gastroenterology is the study of the normal function.",
+        "doctorImg" : "https://i.ibb.co/xhGM54n/sanjay-kumar-bandopadhyay-300x300.jpg",
+        "doctorName" : "Sonjoy Kumar",
+        "doctorData" : "EASL attracts the foremost Gastroenterology experts as members and has an impressive track record in promoting research"
+    },
+    {
+        "id" : "data5",
+        "img":"https://i.ibb.co/FH4NgJP/shared-vision.png",
+        "title" : "Ophthalmology",
+        "subTitle" : "Ophthalmology is a branch of medicine and surgery that deals with the diagnosis and treatment of disorders of the eye",
+        "description" : "Ophthalmology is the study of medical conditions relating to the eye. Ophthalmologists are doctors who specialize in the medical. The International Council of Ophthalmology (ICO) represents and serves professional associations of ophthalmologists throughout the world. Our trained and experienced Consultant provides specialised treatment for a wide variety of eye problems. Ophthalmology-lab Ophthalmology",
+        "doctorImg" : "https://i.ibb.co/C6VZXpJ/ajmeri-kobra.jpg",
+        "doctorName" : "Ajmeri Kobra",
+        "doctorData" : "Ophthalmology is a branch of medicine and surgery that deals with the diagnosis and treatment of disorders of the eye"
+    },
+    {
+        "id" : "data6",
+        "img":"https://i.ibb.co/7pt48zy/bone.png",
+        "title" : "Orthopedics",
+        "subTitle" : "Orthopedists use both surgical and nonsurgical surgery or orthopaedics, is the branch of surgery concerned",
+        "description" :"A person who specializes in orthopedics is known as an orthopedist. Orthopedists use both surgical and nonsurgical approaches to treat a variety of musculoskeletal issues, such as sports injuries, joint pain, and back problems. Orthopaedic surgery or orthopaedics, is the branch of surgery concerned with conditions involving the musculoskeletal system. Orthopaedic surgery or orthopaedics, is the branch of surgery concerned",
+        "doctorImg" : "https://i.ibb.co/3FRZck7/rita-akter.jpg",
+        "doctorName" : "Rita Akter",
+        "doctorData" : "Orthopaedic surgery or orthopaedics, is the branch of surgery concerned. A person who specializes in orthopedics is known as an orthopedist."
+    }
+]

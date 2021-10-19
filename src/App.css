@@ -4,6 +4,9 @@
 .color-overlay{
   background:rgba(131,131,131,.4);
 }
+.service-card , .single-service , .form{
+  background-color: #00699b3b;
+}
 .contact-img{
   background: url(images/default-header-img.jpg);
   height: 380px;

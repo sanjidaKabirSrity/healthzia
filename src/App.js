@@ -10,11 +10,15 @@ import Doctors from './Pages/Doctors';
 import ContactUs from './Pages/ContactUs';
 import NotFound from './Pages/NotFound';
 import Footer from './Shared/Footer';
+import DataProvider from './Context/DataProvider';
+import ServicesDetails from './Pages/ServicesDetails/ServicesDetails';
+import PrivateRoute from './Shared/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="font-sans">
       <AuthProvider>
+        <DataProvider>
         <BrowserRouter>
           <NavBar></NavBar>
           <Switch>
@@ -24,15 +28,18 @@ function App() {
             <Route exact path="/home">
               <Home></Home>
             </Route>
-            <Route exact path="/aboutUs">
+            <PrivateRoute exact path="/services/:serviceId">
+             <ServicesDetails></ServicesDetails>
+            </PrivateRoute>
+            <PrivateRoute exact path="/aboutUs">
               <AboutUs></AboutUs>
-            </Route>
-            <Route exact path="/doctors">
+            </PrivateRoute>
+            {/* <Route exact path="/doctors">
               <Doctors></Doctors>
-            </Route>
-            <Route exact path="/conactUs">
+            </Route> */}
+            <PrivateRoute exact path="/conactUs">
               <ContactUs></ContactUs>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/signin">
               <SignIn></SignIn>
             </Route>
@@ -45,6 +52,7 @@ function App() {
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
+        </DataProvider>
       </AuthProvider>
     </div>
   );
