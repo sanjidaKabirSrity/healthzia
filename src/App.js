@@ -13,8 +13,44 @@ import Footer from './Shared/Footer';
 import DataProvider from './Context/DataProvider';
 import ServicesDetails from './Pages/ServicesDetails/ServicesDetails';
 import PrivateRoute from './Shared/PrivateRoute';
+import useDocumentTitle from './Hooks/useDocumentTitle';
+
+
 
 function App() {
+
+  // Router Page title  
+  function Page(props) {
+    const titlePrefix = 'HEALTHZIA | '
+    useDocumentTitle(`${titlePrefix}${props.title}`)
+    return <h2>{props.content}</h2>
+  }
+  
+  const HomePage = () => {
+    return <Page content={<Home></Home>} title='Just For Patient' />
+  }
+  const AboutPage = () => {
+    return <Page content={<AboutUs></AboutUs>} title='About Our Organization' />
+  }
+  const DoctorsPage = () => {
+    return <Page content={<Doctors></Doctors>} title='Our Best Doctors' />
+  }
+  const ServiceDetailsPage = () => {
+    return <Page content={<ServicesDetails></ServicesDetails>} title='Our Super Service' />
+  }
+  const ContactUsPage = () => {
+    return <Page content={<ContactUs></ContactUs>} title='When Choose Us' />
+  }
+  const SignInPage = () => {
+    return <Page content={<SignIn></SignIn>} title='Sign In' />
+  }
+  const SignUpPage = () => {
+    return <Page content={<SignUp></SignUp>} title='Sign Up' />
+  }
+  const NotFoundPage = () => {
+    return <Page content={<NotFound></NotFound>} title='Sign Up' />
+  }
+
   return (
     <div className="font-sans">
       <AuthProvider>
@@ -25,30 +61,14 @@ function App() {
             <Route exact path="/">
               <Home></Home>
             </Route>
-            <Route exact path="/home">
-              <Home></Home>
-            </Route>
-            <PrivateRoute exact path="/services/:serviceId">
-             <ServicesDetails></ServicesDetails>
-            </PrivateRoute>
-            <PrivateRoute exact path="/aboutUs">
-              <AboutUs></AboutUs>
-            </PrivateRoute>
-            <PrivateRoute exact path="/doctors">
-              <Doctors></Doctors>
-            </PrivateRoute>
-            <PrivateRoute exact path="/conactUs">
-              <ContactUs></ContactUs>
-            </PrivateRoute>
-            <Route exact path="/signin">
-              <SignIn></SignIn>
-            </Route>
-            <Route exact path="/signup">
-              <SignUp></SignUp>
-            </Route>
-            <Route path="*">
-              <NotFound></NotFound>
-            </Route>
+            <Route exact path="/home" component={HomePage}></Route>
+            <PrivateRoute exact path="/services/:serviceId" component={ServiceDetailsPage}></PrivateRoute>
+            <PrivateRoute exact path="/aboutUs" component={AboutPage}></PrivateRoute>
+            <PrivateRoute exact path="/doctors" component={DoctorsPage}></PrivateRoute>
+            <PrivateRoute exact path="/conactUs" component={ContactUsPage}></PrivateRoute>
+            <Route exact path="/signin" component={SignInPage}></Route>
+            <Route exact path="/signup" component={SignUpPage}></Route>
+            <Route path="*" component={NotFoundPage}></Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
