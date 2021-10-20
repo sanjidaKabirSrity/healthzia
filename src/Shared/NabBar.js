@@ -16,7 +16,8 @@ const NabBar = () => {
       const combineContext = useAuth();
       const { firebaseContext } = combineContext;
       const {user , signOutForm} = firebaseContext;
-    console.log(user);
+    // console.log(user);
+    
     return (
         <div>
             <header className="text-gray-600 body-font">
@@ -28,7 +29,7 @@ const NabBar = () => {
                     <nav className="hidden md:block md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                     <NavLink to="/home" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>Home</NavLink>
                     <NavLink to="/aboutUs" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>About Us</NavLink>
-                    {/* <NavLink to="/doctors" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>Doctors</NavLink> */}
+                    <NavLink to="/doctors" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>Doctors</NavLink>
                     <NavLink to="/conactUs" className="hover:text-secondary font-medium hover:border-secondary border-b-2 border-white hover:border-b-2 mx-4 px-3 py-1 text-primary" activeStyle={activeNavTab}>Contact Us</NavLink>
                     </nav>
                     <span className="hidden md:block">
@@ -116,7 +117,7 @@ const NabBar = () => {
                             <NavLink to="/home"
                             className="block font-medium hover:text-secondary px-3 py-2 rounded-md text-base text-primary"
                             >
-                            home
+                            Home
                             </NavLink>
 
                             <NavLink to="/aboutUs"
@@ -125,9 +126,9 @@ const NabBar = () => {
                             About Us
                             </NavLink>
 
-                            {/* <NavLink to="/doctors" className="block font-medium hover:text-secondary px-3 py-2 rounded-md text-base text-primary" >
+                            <NavLink to="/doctors" className="block font-medium hover:text-secondary px-3 py-2 rounded-md text-base text-primary" >
                             Doctors
-                            </NavLink> */}
+                            </NavLink>
 
                             <NavLink to="/conactUs"
                             className="block font-medium hover:text-secondary px-3 py-2 rounded-md text-base text-primary"

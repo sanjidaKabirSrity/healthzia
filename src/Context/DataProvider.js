@@ -7,11 +7,11 @@ const DataProvider = ({ children }) => {
     // Service Data 
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch("./serviceData.json")
+        fetch("https://sanjidakabirsrity.github.io/fake-data/serviceData.json")
         .then((res) => res.json())
         .then((data) => setServices(data));
     }, []);
-    console.log(services);
+    // console.log(services);
     return (
         <DataContext.Provider value={services}>
             { children }

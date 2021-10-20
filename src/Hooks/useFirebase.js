@@ -29,7 +29,7 @@ const useFirebase = () => {
 
   //  sign up with email and password
   const handleSignUpWithEmail = (name, email, password) => {
-      console.log(name, email, password);
+      // console.log(name, email, password);
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const users = userCredential.user;
@@ -40,13 +40,13 @@ const useFirebase = () => {
         })
         .catch((error) => {
             const errorMessage = error.message;
-            console.log(errorMessage)
+            // console.log(errorMessage)
         });
   }
 
   //  sign in with email and password
   const handleSignInWithEmail = (email , password) => {
-      console.log(email,password);
+      // console.log(email,password);
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const users = userCredential.user;

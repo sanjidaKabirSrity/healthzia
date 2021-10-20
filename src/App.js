@@ -28,18 +28,18 @@ function App() {
             <Route exact path="/home">
               <Home></Home>
             </Route>
-            <Route exact path="/services/:serviceId">
+            <PrivateRoute exact path="/services/:serviceId">
              <ServicesDetails></ServicesDetails>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute exact path="/aboutUs">
               <AboutUs></AboutUs>
             </PrivateRoute>
-            {/* <Route exact path="/doctors">
+            <PrivateRoute exact path="/doctors">
               <Doctors></Doctors>
-            </Route> */}
-            <Route exact path="/conactUs">
+            </PrivateRoute>
+            <PrivateRoute exact path="/conactUs">
               <ContactUs></ContactUs>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/signin">
               <SignIn></SignIn>
             </Route>

@@ -39,7 +39,7 @@ const SignIn = () => {
       }
 
     return (
-        <div className="form py-16">
+        <div className="form md:py-16 py-0">
             <div className="bg-white flex flex-col lg:w-2/6 md:mt-0 md:w-1/2 mt-10 mx-auto p-8 rounded-lg shadow-lg w-full">
             <h2 className="font-medium mb-5 mx-auto text-2xl text-lg text-primary title-font">Sign In</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
