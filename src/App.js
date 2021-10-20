@@ -12,7 +12,7 @@ import NotFound from './Pages/NotFound';
 import Footer from './Shared/Footer';
 import DataProvider from './Context/DataProvider';
 import ServicesDetails from './Pages/ServicesDetails/ServicesDetails';
-import PrivateRoute from './Shared/PrivateRoute/PrivateRoute';
+import PrivateRoute from './Shared/PrivateRoute';
 
 function App() {
   return (
@@ -28,18 +28,18 @@ function App() {
             <Route exact path="/home">
               <Home></Home>
             </Route>
-            <PrivateRoute exact path="/services/:serviceId">
+            <Route exact path="/services/:serviceId">
              <ServicesDetails></ServicesDetails>
-            </PrivateRoute>
+            </Route>
             <PrivateRoute exact path="/aboutUs">
               <AboutUs></AboutUs>
             </PrivateRoute>
             {/* <Route exact path="/doctors">
               <Doctors></Doctors>
             </Route> */}
-            <PrivateRoute exact path="/conactUs">
+            <Route exact path="/conactUs">
               <ContactUs></ContactUs>
-            </PrivateRoute>
+            </Route>
             <Route exact path="/signin">
               <SignIn></SignIn>
             </Route>
