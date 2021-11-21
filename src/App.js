@@ -14,8 +14,7 @@ import DataProvider from './Context/DataProvider';
 import ServicesDetails from './Pages/ServicesDetails/ServicesDetails';
 import PrivateRoute from './Shared/PrivateRoute';
 import useDocumentTitle from './Hooks/useDocumentTitle';
-
-
+  
 
 function App() {
 
@@ -28,18 +27,6 @@ function App() {
   
   const HomePage = () => {
     return <Page content={<Home></Home>} title='Just For Patient' />
-  }
-  const AboutPage = () => {
-    return <Page content={<AboutUs></AboutUs>} title='About Our Organization' />
-  }
-  const DoctorsPage = () => {
-    return <Page content={<Doctors></Doctors>} title='Our Best Doctors' />
-  }
-  const ServiceDetailsPage = () => {
-    return <Page content={<ServicesDetails></ServicesDetails>} title='Our Super Service' />
-  }
-  const ContactUsPage = () => {
-    return <Page content={<ContactUs></ContactUs>} title='When Choose Us' />
   }
   const SignInPage = () => {
     return <Page content={<SignIn></SignIn>} title='Sign In' />
@@ -62,10 +49,18 @@ function App() {
               <Home></Home>
             </Route>
             <Route exact path="/home" component={HomePage}></Route>
-            <PrivateRoute exact path="/services/:serviceId" component={ServiceDetailsPage}></PrivateRoute>
-            <PrivateRoute exact path="/aboutUs" component={AboutPage}></PrivateRoute>
-            <PrivateRoute exact path="/doctors" component={DoctorsPage}></PrivateRoute>
-            <PrivateRoute exact path="/conactUs" component={ContactUsPage}></PrivateRoute>
+            <PrivateRoute exact path="/services/:serviceId">
+              <ServicesDetails></ServicesDetails>
+            </PrivateRoute>
+            <PrivateRoute exact path="/aboutUs">
+              <AboutUs></AboutUs>
+            </PrivateRoute>
+            <PrivateRoute exact path="/doctors">
+              <Doctors></Doctors>
+            </PrivateRoute>
+            <PrivateRoute exact path="/conactUs">
+              <ContactUs></ContactUs>
+            </PrivateRoute>
             <Route exact path="/signin" component={SignInPage}></Route>
             <Route exact path="/signup" component={SignUpPage}></Route>
             <Route path="*" component={NotFoundPage}></Route>
