@@ -8,6 +8,9 @@ Our HEALTHZIA Organization is a health care institution providing patient treatm
 
 This website is used by the following companies:
 
+- Designed a Healthcare-related website including login features.
+- Users can learn more about the services.
+- Compatible with all devices.
 - Best Health Service
 - Full time service
 - Speacialist Service
